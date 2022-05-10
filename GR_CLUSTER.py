@@ -39,7 +39,6 @@ class Cluster :
 		self.flag_center = flag_center
 
 		#Random position (in meters) of the objects in a circular region
-		theta = np.linspace(0, 2*np.pi, self.Number_obj)
 		t = np.random.uniform(0,1, size = self.Number_obj)
 		u = np.random.uniform(0,1, size = self.Number_obj)
 		x = self.Radius*np.sqrt(t)*np.cos(2*np.pi*u)
