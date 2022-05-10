@@ -40,7 +40,6 @@ class Cluster :
 
 		#Random position (in meters) of the objects in a circular region
 		theta = np.linspace(0, 2*np.pi, self.Number_obj)
-		a,b = self.Radius*np.cos(theta), self.Radius*np.sin(theta)
 		t = np.random.uniform(0,1, size = self.Number_obj)
 		u = np.random.uniform(0,1, size = self.Number_obj)
 		x = self.Radius*np.sqrt(t)*np.cos(2*np.pi*u)
