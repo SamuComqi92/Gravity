@@ -69,7 +69,7 @@ class Cluster3D :
 		# Convert list of velocities to a NumPy array
 		self.Velocities = np.array(Velocities) 
     
-	######################################################################################################################################################
+    ######################################################################################################################################################
     # Function to compute the sign of the acceleration components along the x,y, and x axis
     def Sign(A) :
         # Returns -1 if A is non-negative, and 1 if A is negative. Used for direction of acceleration.
